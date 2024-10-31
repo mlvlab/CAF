@@ -8,3 +8,4 @@ Youngjoon Hong,
 Hyunwoo J. Kim†.
 
 This repository is an official implementation of the NeurIPS 2024 paper CAF (Constant Acceleration Flow).
+Codes will be available soon.
