@@ -26,19 +26,19 @@ This approach enables high-quality image generation in a single step. Notably, C
 ## ⭐ Results of CAF
 ### Single-step ImageNet 64x64 generation
 <div align="center">
-  <img src="assets/imagenet642.png" width="800px" />
+  <img src="assets/imagenet642.png" width="700px" />
 </div>
 <p align="middle">FID=1.69</p>
 
 ### Single-step ImageNet 64x64 reconstruction using inversion
 #### Ground Truth
 <div align="center">
-  <img src="assets/gt.png" width="800px" />
+  <img src="assets/gt.png" width="700px" />
 </div>
 
 #### Reconstruction
 <div align="center">
-  <img src="assets/reconstruction_n=1.png" width="800px" />
+  <img src="assets/reconstruction_n=1.png" width="700px" />
 </div>
 <p align="middle">N=1</p>
 
