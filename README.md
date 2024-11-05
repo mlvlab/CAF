@@ -23,7 +23,7 @@ This approach enables high-quality image generation in a single step. Notably, C
 - [ ] Release the pre-trained model.
 
 
-## Results of CAF
+## ⭐ Results of CAF
 ### Single-step ImageNet 64x64 generation
 <div align="center">
   <img src="assets/imagenet642.png" width="800px" />
@@ -33,18 +33,14 @@ This approach enables high-quality image generation in a single step. Notably, C
 ### Single-step ImageNet 64x64 reconstruction using inversion
 #### Ground Truth
 <div align="center">
-  <img src="assets/gt.png" width="500px" />
+  <img src="assets/gt.png" width="800px" />
 </div>
 
 #### Reconstruction
 <div align="center">
-  <img src="assets/reconstruction_n=1.png" width="500px" />
+  <img src="assets/reconstruction_n=1.png" width="800px" />
 </div>
 <p align="middle">N=1</p>
-<div align="center">
-  <img src="assets/reconstruction_n=5.png" width="500px" />
-</div>
-<p align="middle">N=5</p>
 
 ---
 
@@ -62,6 +58,8 @@ conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=
 pip install -e .
 ```
 (RECOMMENDED, linux) Install [PyTorch 2.2.0 with CUDA 11.8](https://pytorch.org/get-started/locally/) for [xformers](https://github.com/facebookresearch/xformers/edit/main/README.md), recommended for memory-efficient computation. 
+
+---
 
 ## 🌄 Data Preparation
 We have utilized pre-trained [EDM](https://github.com/NVlabs/edm) models to generate deterministic couplings for training our models. To construct deterministic couplings for CIFAR-10 and ImageNet, we selected $N=18$ and
@@ -86,12 +84,11 @@ Data
 ```
 It is important to ensure that the z0, z1, and class files correspond to each other by sharing the same filenames. Each triplet (data1.npy in z0, z1, and class) should be aligned to represent a single data pair.
 
+---
+
 ## 🔥🔥 Training
 
 ## 🔮 Inference
-
-## Citation
-If you make use of our work, please cite our paper.
 
 ## Acknowledgements
 This repo is built upon [Consistency Models](https://github.com/openai/consistency_models).
