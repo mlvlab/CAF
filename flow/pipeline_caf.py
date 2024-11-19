@@ -76,7 +76,7 @@ class CAFDenoiser:
                                                   discriminator=discriminator, **model_kwargs)
             g_loss = sum([(-l).mean() for l in logits_fake]) / len(logits_fake)
             if apply_adaptive_weight:
-                d_weight = self.calculate_adaptive_weight(10*adaptive_loss.mean(), g_loss.mean(),
+                d_weight = self.calculate_adaptive_weight(2*adaptive_loss.mean(), g_loss.mean(),
                                                     last_layer=model.module.output_blocks[15][0].out_layers[3].weight)
                 d_weight = th.clip(d_weight, 0.00005, 10)
             else:
