@@ -220,7 +220,7 @@ class TrainLoop:
                 self.accelerator.reduce(param.data, reduction='mean')
 
     def forward_backward_velocity(self, data, latents, classes):
-        self.opt.zero_grad()
+        self.velopt.zero_grad()
         accumulate = data.shape[0] // self.microbatch
 
         # If accumulate is 0, skip forward_backward_velocity 
