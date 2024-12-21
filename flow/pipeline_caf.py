@@ -78,9 +78,9 @@ class CAFDenoiser:
             if apply_adaptive_weight:
                 d_weight = self.calculate_adaptive_weight(2*adaptive_loss.mean(), g_loss.mean(),
                                                     last_layer=model.module.output_blocks[15][0].out_layers[3].weight)
-                d_weight = th.clip(d_weight, 0.00005, 10)
+                d_weight = th.clip(d_weight, 0.01, 10)
             else:
-                d_weight = 0.00005
+                d_weight = 0.01
             discriminator_loss = d_weight * g_loss
         else:
             logits_fake, logits_real = get_xl_feature(fake.detach(), target=real.detach(),
