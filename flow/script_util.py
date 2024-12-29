@@ -57,7 +57,7 @@ def caf_acc_defaults(data_name):
         eval_batch_size=50,
         eval_num_samples=50000,
         class_cond=False,
-        schedule_sampler='exponential',
+        schedule_sampler='uniform',
         loss_norm='lpips_huber',
         num_timesteps=1000,
     )

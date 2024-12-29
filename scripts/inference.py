@@ -28,8 +28,11 @@ def main():
     # Load the best model
     try:
         print(f'Loading the best model from {args.save_pth}')
-        ckpt = th.load(os.path.join(args.save_pth, 'fidbest.pt'), map_location='cpu')
-        model.load_state_dict(ckpt['ema'])
+        ckpt = th.load(os.path.join(args.save_pth, 'model.pt'), map_location='cpu')
+        if 'ema' in ckpt.keys():
+            model.load_state_dict(ckpt['ema'])
+        else:
+            model.load_state_dict(ckpt['model'])
         velmodel.load_state_dict(ckpt['velmodel'])
     except:
         raise ValueError(f'No best model found in {args.save_pth}')

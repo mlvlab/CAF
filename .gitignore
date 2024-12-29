@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+
+__pycache__/
+*.egg
+*.egg_info/
+statistics/
+*.swp
+*.npz

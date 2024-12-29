@@ -710,7 +710,6 @@ class CAFTrainLoopAcc(TrainLoop):
         self.velmodel.load_state_dict(vel_ckpt['velema'])
         self.velmodel.to(self.accelerator.device)
         self.velmodel.eval()
-        self.model.load_state_dict(vel_ckpt['velema'], strict=False)
 
         # EMA
         if self.accelerator.is_main_process:
@@ -729,6 +728,7 @@ class CAFTrainLoopAcc(TrainLoop):
             self.load(os.path.join(self.save_pth, 'ldm-last.pt'))
             print('Step:', self.step)
 
+        self.velmodel = self.velmodel.to(self.accelerator.device)
         self.model, self.opt = self.accelerator.prepare(self.model, self.opt)
         self.data = self.accelerator.prepare(self.data)
         self.data = cycle(self.data)
@@ -819,6 +819,7 @@ class CAFTrainLoopAcc(TrainLoop):
         else:
             th.save(data, os.path.join(self.save_pth, 'ldm-{}.pt'.format(self.step)))
             th.save(data, os.path.join(self.save_pth, 'ldm-last.pt'))
+
     
     def load(self, pth):
         data = th.load(pth, map_location= 'cpu')
