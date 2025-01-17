@@ -12,7 +12,7 @@
 
 ---
 
-This repository is an official implementation of "Constant Acceleration Flow" accepted at NeurIPS 2024.
+This repository is an official implementation of "Constant Acceleration Flow" accepted at NeurIPS 2024. Checkpoints are now avaliable [here](https://drive.google.com/drive/folders/108KcIMiHsKEhVak76sKY3JaRhLFz8zsz).
 
 Constant Acceleration Flow (CAF) introduces a novel ODE framework that models the transformation between two distributions using constant acceleration. 
 This approach enables high-quality image generation in a single step. Notably, CAF also achieves high-accuracy single-step inversion, demonstrating its capability to learn precise forward and reverse flows.
