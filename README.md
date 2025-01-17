@@ -110,7 +110,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_process
 ```
 
 ## Checkpoints
-Checkpoints for the pre-trained models on CIFAR-10 32x32 (unconditional and conditional) and conditional ImageNet 64x64 can be downloaded from [here](https://drive.google.com/drive/folders/108KcIMiHsKEhVak76sKY3JaRhLFz8zsz). You can find models trained w/wo adversarial loss are in  `acc` and `gan` folder, respectively. Download the checkpoint and change the config of `save_pth` in `flow/scrip_util.py` file to your downloaded directory for evaluation.
+Checkpoints for the pre-trained models on CIFAR-10 32x32 (unconditional and conditional) and conditional ImageNet 64x64 can be downloaded from [here](https://drive.google.com/drive/folders/108KcIMiHsKEhVak76sKY3JaRhLFz8zsz). You can find models trained w/wo adversarial loss in  `acc` and `gan` folder, respectively. Download the checkpoint and change the config of `save_pth` in `flow/scrip_util.py` file to your downloaded directory for evaluation.
 
 ## 🔮 Inference
 You can update the inference config in `flow/script_util.py`.
