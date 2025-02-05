@@ -48,7 +48,7 @@ To install requirements, run:
 ```bash
 git clone https://github.com/mlvlab/CAF.git
 cd CAF
-conda create -n caf python==3.9
+conda create -n caf python==3.9.13
 conda activate caf
 conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
@@ -56,8 +56,7 @@ conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=
 ```bash
 pip install -e .
 ```
-(RECOMMENDED, linux) Install [PyTorch 2.2.0 with CUDA 11.8](https://pytorch.org/get-started/locally/) for [xformers](https://github.com/facebookresearch/xformers/edit/main/README.md), recommended for memory-efficient computation. 
-
+(RECOMMENDED, linux) Install [PyTorch 2.2.0 with CUDA 11.8](https://pytorch.org/get-started/locally/) for [xformers](https://github.com/facebookresearch/xformers/edit/main/README.md), recommended for memory-efficient computation.  
 ---
 
 ## 🌄 Data Preparation
