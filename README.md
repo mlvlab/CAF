@@ -94,19 +94,19 @@ You can update the training config in `flow/script_util.py`.
 ### Step1. Training initial velocity model
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes=8 \
-    script/caf_train_vel.py
+    scripts/caf_train_vel.py
 ```
 
 ### Step2. Training acceleration model
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes=8 \
-    script/caf_train_acc.py
+    scripts/caf_train_acc.py
 ```
 
 ### Step3. Training acceleration model with adversarial loss
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes=8 \
-    script/caf_train_gan.py 
+    scripts/caf_train_gan.py 
 ```
 
 ## Checkpoints
@@ -116,7 +116,7 @@ Checkpoints for the pre-trained models on CIFAR-10 32x32 (unconditional and cond
 You can update the inference config in `flow/script_util.py`.
 ### Generation
 ```bash
-python script/inference.py --sample_step [N] --save_image True \
+python scripts/inference.py --sample_step [N] --save_image True \
      --save_dir [path to model]
 ```
 
