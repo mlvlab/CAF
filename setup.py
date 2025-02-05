@@ -21,6 +21,6 @@ setup(
         "timm==0.5.4",
         "ftfy==6.1.1",
         "regex",
-        "tensorflow",
+        "tensorflow==2.13.0",
     ],
 )
