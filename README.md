@@ -134,10 +134,12 @@ If you have any questions, please create an issue on this repository or contact 
 ## Citation
 If you find our work interesting, please consider giving a ⭐ and citation.
 ```bibtex
-@article{park2025sprint,
-  title={Sprint: Sparse-Dense Residual Fusion for Efficient Diffusion Transformers},
-  author={Park, Dogyun and Haji-Ali, Moayed and Li, Yanyu and Menapace, Willi and Tulyakov, Sergey and Kim, Hyunwoo J and Siarohin, Aliaksandr and Kag, Anil},
-  journal={arXiv preprint arXiv:2510.21986},
-  year={2025}
+@article{park2024constant,
+  title={Constant acceleration flow},
+  author={Park, Dogyun and Lee, Sojin and Kim, Sihyeon and Lee, Taehoon and Hong, Youngjoon and Kim, Hyunwoo J},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={90030--90060},
+  year={2024}
 }
 ```
