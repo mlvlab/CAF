@@ -134,10 +134,10 @@ If you have any questions, please create an issue on this repository or contact 
 ## Citation
 If you find our work interesting, please consider giving a ⭐ and citation.
 ```bibtex
-@article{park2024constant,
-  title={Constant Acceleration Flow},
-  author={Park, Dogyun and Lee, Sojin and Kim, Sihyeon and Lee, Taehoon and Hong, Youngjoon and Kim, Hyunwoo J},
-  journal={arXiv preprint arXiv:2411.00322},
-  year={2024}
+@article{park2025sprint,
+  title={Sprint: Sparse-Dense Residual Fusion for Efficient Diffusion Transformers},
+  author={Park, Dogyun and Haji-Ali, Moayed and Li, Yanyu and Menapace, Willi and Tulyakov, Sergey and Kim, Hyunwoo J and Siarohin, Aliaksandr and Kag, Anil},
+  journal={arXiv preprint arXiv:2510.21986},
+  year={2025}
 }
 ```
